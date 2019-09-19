@@ -8,7 +8,7 @@ const client = new Discord.Client();
 
 // const client = new Client({ disableEveryone: true });
 
-const youtube = new YouTube(GOOGLE_API_KEY);
+// const youtube = new YouTube(GOOGLE_API_KEY);
 
 const queue = new Map();
 
@@ -888,4 +888,4 @@ function play(guild, song) {
 
 
 
-client.login(process.env.TOKEN);
+client.login(TOKEN);
