@@ -888,4 +888,4 @@ function play(guild, song) {
 
 
 
-client.login(TOKEN);
+client.login(process.env.TOKEN);
