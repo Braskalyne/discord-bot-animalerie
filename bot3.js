@@ -268,7 +268,7 @@ client.on('message', async msg => { // eslint-disable-line
 	// }
 
 	if (msg.author.bot) return undefined;
-	if (!msg.content.startsWith(PREFIX)) return undefined;
+	if (!msg.content.startsWith(process.env.PREFIX)) return undefined;
 
 	const args = msg.content.split(' ');
 	const searchString = args.slice(1).join(' ');
@@ -303,7 +303,7 @@ const mySqlClient = mysql.createConnection({
 	// commandChannel = message.channel.id;
 
 	let command = msg.content.toLowerCase().split(' ')[0];
-	command = command.slice(PREFIX.length)
+	command = command.slice(process.env.PREFIX.length)
 
 
 
